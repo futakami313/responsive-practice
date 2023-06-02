@@ -1,0 +1,173 @@
+@charset "UTF-8";
+
+.red{
+  background: #ff0000;
+}
+
+.size-box {
+  width: 400px;
+  height: 400px;
+  margin: 0 auto;
+}
+
+@media not screen and (min-width: 960px) {
+  .size-box {
+  width: 200px;
+  height: 200px;
+  }
+}
+
+.box{
+  width: 300px;
+  height: 300px;
+  margin: 0 auto;
+}
+
+
+@media not screen and (min-width: 960px) {
+  .box {
+  background: #007bff;
+  }
+}
+
+
+.container{
+  display:flex;
+  justify-content: center;
+}
+
+.flex-box{
+  width: 300px;
+  height: 300px;
+  margin-left: 150px;
+}
+
+.flex-box:first-child{
+  margin-left: 0;
+}
+
+@media not screen and (min-width: 960px) {
+  .flex-box {
+  margin-left: 50px;
+  }
+}
+@media not screen and (min-width: 960px) {
+  .flex-box:first-child {
+  margin-left: 0;
+  }
+}
+
+.blue{
+  background: #0008ff;
+}
+
+.green{
+  background: #22ff00;
+}
+
+.clearfix::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+.wrapper{
+  width: 600px;
+  margin: 0 auto;
+}
+
+.float-box{
+  width: 300px;
+  height: 300px;
+  float: left;
+}
+
+
+@media not screen and (min-width: 960px) {
+  .float-box{
+    width: 300px;
+    height: 300px;
+    float:none;
+  }
+}
+
+.change-box{
+  position: relative;
+  width: 300px;
+  height: 300px;
+}
+
+
+p{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+@media not screen and (min-width: 960px) {
+  .revers{
+  flex-direction: row-reverse;
+  }
+}
+
+@media not screen and (min-width: 960px) {
+  .orderC {order: 1;}
+  .orderA{order: 2;}
+  .orderB{order: 3;}
+}
+
+
+.orange{
+  background: #ff8400;
+}
+
+.pink{
+  background: #ff00e1;
+}
+
+.yellow{
+  background: #d4ff00;
+}
+
+.container2
+{
+  width: 100%;
+}
+
+.wrapper2{
+  width: 600px;
+  margin: 0 auto;
+}
+
+.red-box{
+  width: 300px;
+  height: 300px;
+  float: left;
+  background: #ff0000;
+}
+
+.blue-box{
+  display: none;
+  float: left;
+}
+
+.green-box{
+  width: 300px;
+  height: 300px;
+  float: left;
+  background: #00ff51;
+}
+
+@media not screen and (min-width: 960px) {
+  .blue-box{
+    display: initial;
+    width: 300px;
+    height: 300px;
+    float: left;
+    background: #0008ff;
+  }
+  .red-box{
+    display: none;
+  }
+}
