@@ -21,15 +21,14 @@
   width: 300px;
   height: 300px;
   margin: 0 auto;
+  background: #ff0000;
 }
 
-
 @media not screen and (min-width: 960px) {
-  .box {
+.box {
   background: #007bff;
   }
 }
-
 
 .container{
   display:flex;
@@ -85,18 +84,30 @@
 
 @media not screen and (min-width: 960px) {
   .float-box{
-    width: 300px;
-    height: 300px;
     float:none;
   }
 }
 
-.change-box{
+.red-change-box{
   position: relative;
   width: 300px;
   height: 300px;
+  background: #ff0000;
 }
 
+.blue-change-box{
+  position: relative;
+  width: 300px;
+  height: 300px;
+  background: #0008ff;
+}
+
+.orange-change-box{
+  position: relative;
+  width: 300px;
+  height: 300px;
+  background: #ff8400;;
+}
 
 p{
   position: absolute;
@@ -111,23 +122,31 @@ p{
   }
 }
 
+.pink-change-box{
+  position: relative;
+  width: 300px;
+  height: 300px;
+  background: #ff00e1;
+}
+
+.yellow-change-box{
+  position: relative;
+  width: 300px;
+  height: 300px;
+  background: #d4ff00;
+}
+
+.green-change-box{
+  position: relative;
+  width: 300px;
+  height: 300px;
+  background: #22ff00;
+}
+
 @media not screen and (min-width: 960px) {
   .orderC {order: 1;}
   .orderA{order: 2;}
   .orderB{order: 3;}
-}
-
-
-.orange{
-  background: #ff8400;
-}
-
-.pink{
-  background: #ff00e1;
-}
-
-.yellow{
-  background: #d4ff00;
 }
 
 .container2
@@ -150,6 +169,8 @@ p{
 .blue-box{
   display: none;
   float: left;
+  width: 300px;
+  height: 300px;
 }
 
 .green-box{
@@ -162,9 +183,6 @@ p{
 @media not screen and (min-width: 960px) {
   .blue-box{
     display: initial;
-    width: 300px;
-    height: 300px;
-    float: left;
     background: #0008ff;
   }
   .red-box{
